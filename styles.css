@@ -6,7 +6,6 @@
     font-style: normal;
 }
 
-/* Reset the default margins and padding */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,7 @@
 
 body, html {
     height: 100%;
-    font-family: 'CustomFont', serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 header {
@@ -27,10 +26,16 @@ header {
     left: 0;
     z-index: 10; /* Make sure it's above other items */
     transition: all 0.3s ease; /* Smooth transition for background and color */
+    display: flex; /* Aligns the header content vertically */
+    align-items: center; /* Centers the header content vertically */
+    justify-content: space-between; /* Adjusts spacing around the header content */
 }
 
 .header-content {
     padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 2em; /* Adjust the font-size of 'Apricity' text, make it larger or smaller as needed */
+    /* Change the font size below to adjust the size of the 'Apricity' text */
+    /* Change this */ font-size: 2em; /* Adjust this value to make 'Apricity' bigger or smaller */
 }
 
 #hero img {
@@ -38,33 +43,22 @@ header {
     height: 100vh; /* This makes the hero image take the full height of the viewport */
 }
 
+#hero .hero-content {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    color: white; /* Text color */
+    font-size: 3em; /* Text size for 'magutoro.co', adjust as needed */
+    z-index: 5; /* Ensure it's visible above the hero image */
+}
+
 .scroll-header {
     background-color: white;
     color: black;
+    padding: 10px 20px; /* Adjust padding to increase header height with the text */
 }
 
-
-/* First photo, middle text */
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'CustomFont', serif; /* This is the font similar to 'Forum' */
-    font-size: 5.5em; /* Adjust size as needed */
-}
-
-#hero {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-#hero img {
-    width: 100%;
-    height: auto;
-}
 
 /* Image hover effect */
 
