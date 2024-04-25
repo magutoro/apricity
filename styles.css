@@ -29,7 +29,7 @@ header {
     left: 0;
     z-index: 1000;
     transition: all 0.3s;
-    font-size: 0.9em; /* Adjust the size of 'Apricity' text */
+    font-size: 0.6em; /* Adjust the size of 'Apricity' text */
     transition: background-color 0.3s; /* Smooth transition for background */
 }
 
