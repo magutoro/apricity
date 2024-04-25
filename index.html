@@ -19,8 +19,7 @@
     
     <section id="gallery">
         <figure>
-            <img src="Screenshot 2024-03-11 at 10.49.15 PM.png" alt="Description of product 1">
-            <img src="product1-hover.jpg" class="hover-img" alt="Description of product 1 hover">
+            <img src="Screenshot 2024-03-11 at 10.49.15 PM.png" alt="Description of product 1" data-hover-src="product1-hover.jpg" data-original-src="Screenshot 2024-03-11 at 10.49.15 PM.png">
         </figure>
         <img src="Screenshot 2024-03-11 at 10.55.47 PM.png" alt="Description of product 2">
         <img src="Screenshot 2024-03-11 at 11.01.05 PM.png" alt="Description of product 3">
@@ -34,6 +33,21 @@
         const header = document.querySelector('header');
         header.classList.toggle('scroll-header', window.scrollY > 0);
         });
+    </script>
+
+    <script>
+        document.querySelectorAll('#gallery img').forEach(img => {
+        img.addEventListener('mouseenter', function() {
+            setTimeout(() => {
+                if (img.matches(':hover')) {
+                    img.src = img.getAttribute('data-hover-src'); // Ensure the new image path is set in data-hover-src attribute
+                }
+            }, 2000); // Delay in milliseconds
+        });
+        img.addEventListener('mouseleave', function() {
+            img.src = img.getAttribute('data-original-src'); // Revert to the original source
+        });
+    });
     </script>
     
 </body>
