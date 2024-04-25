@@ -6,16 +6,6 @@
     font-style: normal;
 }
 
-#hero {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-#hero img {
-    width: 100%;
-    height: auto;
-}
 
 
 /* Apply custom font and style for the header */
@@ -23,15 +13,21 @@
 header {
     font-family: 'CustomFont', sans-serif;
     background-color: transparent; /* Make header background transparent */
-    position: absolute; /* Keep the header at the top */
+    position: fixed; /* Keep the header at the top */
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 0; /* original is 1000, testing out 0 to see if it fixes the problem*/
     transition: all 0.3s;
     font-size: 0.6em; /* Adjust the size of 'Apricity' text */
     transition: background-color 0.3s; /* Smooth transition for background */
 }
+
+.scroll-header {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-bottom: 2px solid #ccc; /* Add a clear border */
+}
+
 
 /* First photo, middle text */
 
@@ -44,12 +40,16 @@ header {
     font-size: 5.5em; /* Adjust size as needed */
 }
 
-/* Style for header when user scrolls */
-.scroll-header {
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    border-bottom: 2px solid #ccc; /* Add a clear border */
+#hero {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
+#hero img {
+    width: 100%;
+    height: auto;
+}
 
 /* Image hover effect */
 
