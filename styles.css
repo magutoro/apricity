@@ -33,9 +33,9 @@ header {
 
 .header-content {
     padding: 10px 20px; /* Adjust padding as needed */
-    font-size: 2em; /* Adjust the font-size of 'Apricity' text, make it larger or smaller as needed */
-    /* Change the font size below to adjust the size of the 'Apricity' text */
-    /* Change this */ font-size: 2em; /* Adjust this value to make 'Apricity' bigger or smaller */
+    font-size: 2em; /* Adjust the font-size of 'magutoro' text, make it larger or smaller as needed */
+    /* Change the font size below to adjust the size of the 'magutoro' text */
+    /* Change this */ font-size: 2em; /* Adjust this value to make 'magutoro' bigger or smaller */
 }
 
 #hero img {
@@ -49,7 +49,7 @@ header {
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%);
     color: white; /* Text color */
-    font-size: 3em; /* Text size for 'magutoro.co', adjust as needed */
+    font-size: 5.5em; /* Text size for 'apricity', adjust as needed */
     z-index: 5; /* Ensure it's visible above the hero image */
 }
 
