@@ -1,3 +1,11 @@
+/* Add @font-face rule for custom font */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('Forum-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #hero {
     position: relative;
     text-align: center;
@@ -14,12 +22,37 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Roboto Slab', serif; /* This is the font similar to 'Forum' */
+    font-family: 'CustomFont', serif; /* This is the font similar to 'Forum' */
     font-size: 5em; /* Adjust size as needed */
 }
 
-/* Continue with existing CSS */
-/* ... */
+/* Apply custom font and style for the header */
+
+header {
+    font-family: 'CustomFont', sans-serif;
+    background-color: transparent; /* Make header background transparent */
+    position: fixed; /* Keep the header at the top */
+    width: 100%;
+    z-index: 1000; /* Ensure the header is above other content */
+    transition: background-color 0.3s; /* Smooth transition for background */
+}
+
+/* Style for header when user scrolls */
+.scroll-header {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-bottom: 2px solid #ccc; /* Add a clear border */
+}
+
+/* Remove borders around images */
+#gallery img {
+    border: none; /* Remove borders */
+}
+
+/* Image hover effect */
+#gallery img:hover {
+    transform: scale(1.1); /* Zoom effect */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+}
 
 
 body {
