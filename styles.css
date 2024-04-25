@@ -19,13 +19,13 @@ header {
     left: 0;
     z-index: 0; /* original is 1000, testing out 0 to see if it fixes the problem*/
     transition: all 0.3s;
-    font-size: 0.6em; /* Adjust the size of 'Apricity' text */
+    font-size: 0.4em; /* Adjust the size of 'Apricity' text */
     transition: background-color 0.3s; /* Smooth transition for background */
 }
 
 .scroll-header {
     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    border-bottom: 2px solid #ccc; /* Add a clear border */
+    border-bottom: 0px solid #ccc; /* Add a clear border */
 }
 
 
