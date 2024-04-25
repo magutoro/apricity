@@ -6,7 +6,7 @@
     <title>apricity by magutoro.co</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    
 <body>
     <header>
         <div class="centered">magutoro.co</div>
@@ -42,7 +42,7 @@
                 if (img.matches(':hover')) {
                     img.src = img.getAttribute('data-hover-src'); // Ensure the new image path is set in data-hover-src attribute
                 }
-            }, 2000); // Delay in milliseconds
+            }, 500); // Delay in milliseconds
         });
         img.addEventListener('mouseleave', function() {
             img.src = img.getAttribute('data-original-src'); // Revert to the original source
