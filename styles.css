@@ -1,3 +1,27 @@
+#hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto Slab', serif; /* This is the font similar to 'Forum' */
+    font-size: 5em; /* Adjust size as needed */
+}
+
+/* Continue with existing CSS */
+/* ... */
+
+
 body {
     font-family: Arial, sans-serif;
     background: #f4f4f4;
@@ -21,3 +45,8 @@ header {
     height: auto; /* Keeps the aspect ratio of the images */
     border: 2px solid #333; /* Thinner borders */
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
