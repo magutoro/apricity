@@ -83,12 +83,12 @@ header {
     grid-template-columns: repeat(3, 1fr); /* Creates three columns of equal size */
     gap: 5px; /* Reduces the gap between images */
     padding: 20px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #gallery figure {
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
 }
 
