@@ -26,15 +26,15 @@ header {
     left: 0;
     z-index: 10; /* Make sure it's above other items */
     transition: all 0.3s ease; /* Smooth transition for background and color */
+        text-align: center; /* hoping by putting this in, the text will be in the center not the left, also putting above others to see if this overwrite smthn*/
     display: flex; /* Aligns the header content vertically */
     align-items: center; /* Centers the header content vertically */
     justify-content: space-between; /* Adjusts spacing around the header content */
-    text-align: center; /* hoping by putting this in, the text will be in the center not the left */
 }
 
 .header-content {
     padding: 10px 20px; /* Adjust padding as needed */
-    font-size: 1.8em; /* Adjust the font-size of 'magutoro' text, make it larger or smaller as needed */
+    font-size: 1.5em; /* Adjust the font-size of 'magutoro' text, make it larger or smaller as needed */
     /* Change the font size below to adjust the size of the 'magutoro' text */
     /* Change this */ font-size: 2em; /* Adjust this value to make 'magutoro' bigger or smaller */
 }
@@ -55,7 +55,7 @@ header {
 }
 
 .scroll-header {
-    background-color: blue;
+    background-color: green;
     color: black;
     padding: 10px 20px; /* Adjust padding to increase header height with the text */
 }
