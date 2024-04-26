@@ -121,6 +121,7 @@ header {
     flex: 1; /* Take up 1/2 of the container */
     display: flex;
     flex-direction: column; /* Stack images vertically */
+    flex-basis: 50%; /* Takes up half the container width */
     height: 100vh; /* Set a fixed viewport height */
     overflow-y: auto; /* Enable vertical scrolling */
     overflow-x: hidden; /* Hide horizontal scroll */
@@ -128,7 +129,6 @@ header {
 }
 
 .image-column img {
-    flex-basis: 50%; /* Takes up half the container width */
     width: 100%; /* Make images full width of the column */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove any extra space below images */
@@ -136,7 +136,12 @@ header {
 
 /* Column for text */
 .text-column {
-    flex: 1;
+    flex: 1; 
+    flex-basis: 50%; /* Takes up half the container width */
+    align-self: flex-start; /* Start aligning from slightly above the center */
+    padding: 0 20px; /* Add padding to the left and right */
+    margin-top: -10%; /* Adjust this value to move the text slightly above the center */
+    text-align: left; /* Align text to the left */
     position: fixed;
     right: 0;
     top: 60px; /* Below the header */
