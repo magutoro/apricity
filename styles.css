@@ -160,18 +160,18 @@ header {
 
 /* Styling for individual text elements */
 .apricity-creative {
-    font-size: 1.7em;
+    font-size: 0.9em;
     color: black;
 }
 
 .expression-tshirt {
-    font-size: 3em;
+    font-size: 2.5em;
     color: black;
 }
 
 .price {
-    font-size: 1.3em;
-    color: black;
+    font-size: 0.6em;
+    color: lightgrey;
 }
 
 
@@ -187,7 +187,7 @@ header {
 
 /* Style for collapsible details */
 .collapsible {
-    font-size: 1.5em;
+    font-size: 0.9em;
     color: black;
     cursor: pointer;
 }
@@ -196,10 +196,13 @@ header {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    font-size: 0.5em;
+    font-size: 0.9em;
     color: black;
 }
 
+.apricity-creative, .expression-tshirt, .collapsible {
+    margin-bottom: 10px; /* Reduced spacing for a tighter look */
+}
 
 html {
     scroll-behavior: smooth;
