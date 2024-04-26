@@ -54,24 +54,25 @@ header {
     justify-content: space-between;  /* Aligns the links to each side and center */
     align-items: center;            /* Centers items vertically */
     padding: 0 20px;                /* Padding on the sides */
-    background-color: white;
+    background-color: transparent;
     color: black;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 1000;
     border-bottom: 2px solid lightgrey;
+    transition: background-color 0.3s ease; /* Smooth transition for background */
 }
 
 .header-link {
-    font-size: 0.8em;               /* Smaller font size for the links */
+    font-size: 1em;               /* Smaller font size for the links */
     color: black;                   /* Ensures the text is black */
     text-decoration: none;          /* No underline */
     padding: 10px;                  /* Padding around the links for easier clicking */
 }
 
 .header-content a {
-    font-size: 1.5em;                 /* Larger font size for 'Apricity' */
+    font-size: 2em;                 /* Larger font size for 'Apricity' */
     color: black;
     text-decoration: none;
 }
@@ -84,7 +85,6 @@ header {
     background-color: white;
     color: black;
     padding: 10px 20px; /* Adjust padding to increase header height with the text */
-    transition: background-color 0.3s ease-in-out; // Smooth transition to white 
 }
 
 
