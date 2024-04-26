@@ -122,6 +122,7 @@ header {
     width: 50%; /* Takes up half of the container width */
     height: calc(100vh - 70px); /* Full viewport height minus header height */
     overflow-y: auto; /* Allows vertical scrolling within the column */
+    top: 70px; /* Positioned below the header */
 }
 
 /* Fixes the image stretch issue */
