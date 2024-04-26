@@ -41,7 +41,7 @@ header {
 
 
 .header-content {
-    padding: 10px 20px; /* Adjust padding as needed */
+    padding: 5px 0; /* Adjust padding as needed */
     font-size: 1.4em; /* Adjust the font-size of 'magutoro' text, make it larger or smaller as needed */
     /* Change the font size below to adjust the size of the 'magutoro' text */
     /* Change this */ font-size: 2em; /* Adjust this value to make 'magutoro' bigger or smaller */
@@ -71,7 +71,7 @@ header {
     font-size: 0.6em;               /* Smaller font size for the links */
     color: black;                   /* Ensures the text is black */
     text-decoration: none;          /* No underline */
-    padding: 10px;                  /* Padding around the links for easier clicking */
+    padding: 5px;                  /* Padding around the links for easier clicking */
 }
 
 .header-content a {
