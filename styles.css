@@ -44,13 +44,6 @@ header-redirect{
 }
 
 .header-content {
-    width: 100%;
-    text-align: center; /* Center text horizontally */
-    font-size: 1em; /* Adjust as needed */
-}
-
-
-.header-content {
     padding: 10px 20px; /* Adjust padding as needed */
     font-size: 1.5em; /* Adjust the font-size of 'magutoro' text, make it larger or smaller as needed */
     /* Change the font size below to adjust the size of the 'magutoro' text */
