@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apricity by magutoro.co</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    
+<body>
+    <header class="new-page-header">
+        <div class="header-left">
+            <a href="gallery.html" class="header-link">Gallery</a>
+            <a href="story.html" class="header-link">Story</a>
+        </div>
+        <div class="header-content">
+            <a href="index.html">magutoro.co</a>  <!-- Makes the text clickable and redirects to the home page -->
+        </div>
+        <div class="header-right">
+            <a href="contact.html" class="header-link">Contacts</a>
+        </div>
+    </header>
+
+
+    <div class="new-page-container">
+        <div class="image-column">
+            <!-- Add your 1x4 column of images here -->
+            <img src="front6.jpg" alt="Detail">
+            <img src="back6.jpg" alt="Detail">
+            <img src="zoom6.jpg" alt="Detail">
+            <img src="solo6.jpg" alt="Detail">
+        </div>
+        <div class="text-column">
+            <!-- Add your product details here -->
+            <div class="apricity-creative">Apricity Creative</div>
+            <div class="expression-tshirt">Expression T-Shirt</div>
+            <div class="price">$250</div>
+            <div class="description">hope this works :)</div>
+         
+            <div class="collapsible">Details +</div>
+            <div class="content">
+              <p>100% cotton</p>
+              <p>coffee flavor</p>
+            </div>
+
+            <div class="collapsible">Shipping Policy +</div>
+            <div class="content">
+              <p>free shipping in jp</p>
+              <p>worldwide shipping, extra cost</p>
+              <p>pickup available</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.collapsible').forEach(item => {
+            item.addEventListener('click', function() {
+                this.classList.toggle('active');
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+        });  
+    </script>
+    
+     <script>
+        window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        header.classList.toggle('scroll-header', window.scrollY > 0);
+        });
+    </script>
+
+</body>
+</html>
