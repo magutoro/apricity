@@ -80,6 +80,14 @@ header {
     display: flex;
 }
 
+.scroll-header {
+    background-color: white;
+    color: black;
+    padding: 10px 20px; /* Adjust padding to increase header height with the text */
+    transition: background-color 0.3s ease-in-out; // Smooth transition to white 
+}
+
+
 #hero {
     position: relative;  // This ensures that hero-content positions itself relative to this container
     width: 100%;
@@ -100,13 +108,6 @@ header {
     font-size: 6em; /* Text size for 'apricity', adjust as needed */
     z-index: 5; /* Ensure it's visible above the hero image */
 }
-
-.scroll-header {
-    background-color: white;
-    color: black;
-    padding: 10px 20px; /* Adjust padding to increase header height with the text */
-}
-
 
 /* Image hover effect */
 
