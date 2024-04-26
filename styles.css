@@ -17,6 +17,14 @@ body, html {
     font-family: 'Roboto Slab', serif;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; // Make sure this is set to allow for full page height
+    overflow: auto; // This should allow for scrolling
+}
+
+
 header {
     background: transparent;
     color: white;
@@ -111,44 +119,38 @@ header {
 //* Container for the image and text columns */
 .new-page-container {
     display: flex;
-    padding-top: 70px;  /* Adjust this value if the header is taller */
-    height: calc(100vh - 70px); /* Adjust height calculation to match the header */
+    padding-top: 70px; // Assuming the header height is 70px, adjust if it's different
+    height: calc(100vh - 70px); // Ensure this calculation matches the actual header height
     box-sizing: border-box;
     width: 100%;
+    overflow: hidden; // Try adding this to cut any overflow causing white space
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden; /* Prevent scrolling to see if it removes the white strip */
+.image-column, .text-column {
+    height: 100%; // This ensures that both columns fit within their parent container without exceeding
+    overflow-y: auto; // Allows for scrolling within each column if content is longer than the column height
 }
 
-
-/* Column for images */
 .image-column {
-    width: 50%;
-    height: calc(100vh - 70px); /* Adjust as needed */
-    overflow-y: auto;
-    margin: 0;
+    flex: 1;
     padding: 0;
 }
+
 .image-column img {
+    display: block;
     width: 100%;
     height: auto;
-    display: block; /* This removes any space between inline-block elements */
+    margin: 0; // This ensures no additional space around the images
+    padding: 0; // Ensures no padding around images
 }
 
-/* Column for text */
+
 .text-column {
-    width: 50%;
+    flex: 1;
     position: fixed;
     right: 0;
-    top: 70px;
-    height: calc(100vh - 70px);
-    overflow-y: auto;
-    padding: 0 30px; /* Adjust padding to create a bigger gap between images and text */
-    box-sizing: border-box;
+    top: 70px; // Adjust if the header height is different
+    padding: 20px;
 }
 
 .text-column > * {
