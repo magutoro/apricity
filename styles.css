@@ -67,15 +67,15 @@ header {
 
 
 .header-link {
-    font-size: 0.8em;               /* Smaller font size for the links */
+    font-size: 0.6em;               /* Smaller font size for the links */
     color: black;                   /* Ensures the text is black */
     text-decoration: none;          /* No underline */
     padding: 10px;                  /* Padding around the links for easier clicking */
 }
 
 .header-content a {
-    font-size: 1.4em;                 /* Larger font size for 'Apricity' */
-    color: black;
+    font-size: 1em;                 /* Larger font size for 'Apricity' */
+    color: pink;
     text-decoration: none;
 }
 
