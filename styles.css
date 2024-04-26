@@ -108,43 +108,37 @@ header {
 /* Redirect Page */
 
 
-/* Container holding image and text columns */
+//* Container for the image and text columns */
 .new-page-container {
     display: flex;
-    padding-top: 70px; /* Adjust as needed to fit under the header */
-    height: calc(100vh - 70px);
+    padding-top: 70px; /* Space for the header */
+    height: calc(100vh - 70px); /* Full height minus header height */
     box-sizing: border-box;
+    width: 100%; /* Ensures the container takes full width */
 }
 
 /* Column for images */
 .image-column {
-    flex: 1; /* Take up 1/2 of the container */
-    display: flex;
-    flex-direction: column; /* Stack images vertically */
-    height: calc(100vh - 60px);
-    overflow-y: auto; /* Enable vertical scrolling */
-    overflow-x: hidden; /* Hide horizontal scroll */
-    padding: 0; /* Remove padding */
+    width: 50%; /* Takes up half of the container width */
+    height: calc(100vh - 70px); /* Full viewport height minus header height */
+    overflow-y: auto; /* Allows vertical scrolling within the column */
 }
 
+/* Fixes the image stretch issue */
 .image-column img {
-    width: 100%; /* Make images full width of the column */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any extra space below images */
+    width: 100%; /* Images fill the width of the image column */
+    height: auto; /* Maintains aspect ratio */
 }
-
 
 /* Column for text */
-/* Adjust the positioning of the text column to ensure it's not obscured by the header */
 .text-column {
+    width: 50%; /* Takes up the other half of the container width */
     position: fixed;
     right: 0;
-    top: 70px; /* Increased to ensure it starts below the header */
-    height: calc(100vh - 70px); /* Adjust the height to start below the header */
+    top: 70px; /* Positioned below the header */
+    height: calc(100vh - 70px);
     overflow-y: auto;
-    padding: 20px 20px 20px 0; /* Add right padding */
-    box-sizing: border-box;
-    width: 30%; /* Adjust the width to prevent stretching across the screen */
+    padding: 20px;
 }
 
 /* Adjust the individual text elements for alignment and spacing */
