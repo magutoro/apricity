@@ -112,7 +112,7 @@ header {
 .new-page-container {
     display: flex;
     padding-top: 70px; /* Space for the header */
-    height: calc(100vh - 70px); /* Full height minus header height */
+    height: calc(100vh - 40px); /* Full height minus header height */
     box-sizing: border-box;
     width: 100%; /* Ensures the container takes full width */
 }
