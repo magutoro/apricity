@@ -111,40 +111,50 @@ header {
 //* Container for the image and text columns */
 .new-page-container {
     display: flex;
-    padding-top: 70px; /* Space for the header */
-    height: calc(100vh - 70px); /* Full height minus header height */
+    padding-top: 70px;  /* Adjust this value if the header is taller */
+    height: calc(100vh - 70px); /* Adjust height calculation to match the header */
     box-sizing: border-box;
-    width: 100%; /* Ensures the container takes full width */
+    width: 100%;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling to see if it removes the white strip */
+}
+
 
 /* Column for images */
 .image-column {
-    width: 50%; /* Takes up half of the container width */
-    height: calc(100vh - 40px); /* Full viewport height minus header height */
-    overflow-y: auto; /* Allows vertical scrolling within the column */
+    width: 50%;
+    height: calc(100vh - 70px); /* Adjust as needed */
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
 }
-
-/* Fixes the image stretch issue */
 .image-column img {
-    width: 100%; /* Images fill the width of the image column */
-    height: auto; /* Maintains aspect ratio */
+    width: 100%;
+    height: auto;
+    display: block; /* This removes any space between inline-block elements */
 }
 
 /* Column for text */
 .text-column {
-    width: 50%; /* Takes up the other half of the container width */
+    width: 50%;
     position: fixed;
     right: 0;
-    top: 70px; /* Positioned below the header */
+    top: 70px;
     height: calc(100vh - 70px);
     overflow-y: auto;
-    padding: 20px;
+    padding: 0 30px; /* Adjust padding to create a bigger gap between images and text */
+    box-sizing: border-box;
 }
 
-/* Adjust the individual text elements for alignment and spacing */
 .text-column > * {
-    margin-bottom: 20px; /* Adds space between text elements */
-    text-align: left; /* Ensures all text is aligned to the left */
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: auto; /* Ensures alignment is tight to the left */
 }
 
 /* Styling for individual text elements */
@@ -167,7 +177,7 @@ header {
 .description {
     width: 100%; /* Adjust width to fill the text column */
     text-align: left; /* Align text to the left */
-    padding-right: 20px; /* Prevent text from being flush against the edge */
+    padding-right: 0 20px; /* Prevent text from being flush against the edge */
     box-sizing: border-box;
     font-size: 1.5em;
     color: black;
