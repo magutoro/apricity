@@ -12,8 +12,11 @@
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;  // This ensures that scrolling is enabled
+    min-height: 100%;  // This change ensures that the body can expand beyond the viewport height if needed
     font-family: 'Roboto Slab', serif;
 }
 
