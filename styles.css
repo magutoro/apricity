@@ -112,7 +112,7 @@ header {
 .new-page-container {
     display: flex;
     padding-top: 70px; /* Space for the header */
-    height: calc(100vh - 10px); /* Full height minus header height */
+    height: calc(100vh - 70px); /* Full height minus header height */
     box-sizing: border-box;
     width: 100%; /* Ensures the container takes full width */
 }
@@ -120,9 +120,8 @@ header {
 /* Column for images */
 .image-column {
     width: 50%; /* Takes up half of the container width */
-    height: calc(100vh - 10px); /* Full viewport height minus header height */
+    height: calc(100vh - 70px); /* Full viewport height minus header height */
     overflow-y: auto; /* Allows vertical scrolling within the column */
-    top: 70px; /* Positioned below the header */
 }
 
 /* Fixes the image stretch issue */
@@ -136,8 +135,8 @@ header {
     width: 50%; /* Takes up the other half of the container width */
     position: fixed;
     right: 0;
-    top: 100px; /* Positioned below the header */
-    height: calc(100vh - 10px);
+    top: 70px; /* Positioned below the header */
+    height: calc(100vh - 70px);
     overflow-y: auto;
     padding: 20px;
 }
@@ -155,12 +154,12 @@ header {
 }
 
 .expression-tshirt {
-    font-size: 2em;
+    font-size: 3em;
     color: black;
 }
 
 .price {
-    font-size: 0.3em;
+    font-size: 1.3em;
     color: black;
 }
 
