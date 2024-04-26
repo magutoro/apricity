@@ -33,7 +33,6 @@ header {
     top: 0;
     left: 0;
     z-index: 10; /* Make sure it's above other items */
-    transition: all 0.3s ease; /* Smooth transition for background and color */
     display: flex; /* Aligns the header content vertically */
     align-items: center; /* Centers the header content vertically */
     justify-content: space-between; /* Adjusts spacing around the header content */
