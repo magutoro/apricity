@@ -44,7 +44,7 @@ header {
 .new-page-header {
     position: fixed;
     width: 100%;
-    background-color: blue;
+    background-color: white;
     color: black;
     z-index: 1000; /* Keep it on top */
     padding: 10px 0;
