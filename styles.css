@@ -136,7 +136,7 @@ header {
     width: 50%; /* Takes up the other half of the container width */
     position: fixed;
     right: 0;
-    top: 70px; /* Positioned below the header */
+    top: 100px; /* Positioned below the header */
     height: calc(100vh - 10px);
     overflow-y: auto;
     padding: 20px;
