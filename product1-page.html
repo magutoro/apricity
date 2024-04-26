@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Head content including linking to the stylesheet and custom font -->
+</head>
+<body>
+    <header>
+        <!-- Same header as your main page -->
+    </header>
+
+    <div class="container">
+        <div class="image-column">
+            <!-- Add your 1x4 column of images here -->
+            <img src="image1.jpg" alt="Detail">
+            <img src="image2.jpg" alt="Detail">
+            <img src="image3.jpg" alt="Detail">
+            <img src="image4.jpg" alt="Detail">
+        </div>
+        <div class="text-column">
+            <!-- Add your product details here -->
+            <div class="apricity-creative">Apricity Creative</div>
+            <div class="expression-tshirt">Expression T-Shirt</div>
+            <div class="price">$200</div>
+            <div class="description">Long description about the product...</div>
+          
+          document.querySelectorAll('.collapsible').forEach(item => {
+              item.addEventListener('click', function() {
+                this.classList.toggle('active');
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+        });  
+            <!-- Implement collapsible details and shipping policy sections -->
+            <!-- Additional JavaScript will be required for collapsible functionality -->
+        </div>
+    </div>
+
+    <script>
+        <div class="collapsible">Details</div>
+        <div class="content">
+          <p>sentence 1</p>
+          <p>sentence 2</p>
+          <p>sentence 3</p>
+        </div>
+
+        <div class="collapsible">Shipping Policy</div>
+        <div class="content">
+          <p>sentence 4</p>
+          <p>sentence 5</p>
+          <p>sentence 6</p>
+        </div>    
+      </script>
+
+</body>
+</html>
+
 
