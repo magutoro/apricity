@@ -97,6 +97,74 @@ header {
 /* Redirect Page */
 
 
+/* Container holding image and text columns */
+.container {
+    display: flex;
+    width: 100%;
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Column for images */
+.image-column {
+    flex: 1; /* Take up 1/2 of the container */
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    height: 100vh; /* Set a fixed viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scroll */
+    padding: 0; /* Remove padding */
+}
+
+.image-column img {
+    width: 100%; /* Make images full width of the column */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below images */
+}
+
+/* Column for text */
+.text-column {
+    flex: 1; /* Take up 1/2 of the container */
+    padding: 20px; /* Add some padding */
+    overflow-y: auto; /* Allow scrolling for overflow content */
+}
+
+/* Styling for individual text elements */
+.apricity-creative {
+    font-size: 0.7em;
+    color: black;
+}
+
+.expression-tshirt {
+    font-size: 1em;
+    color: black;
+}
+
+.price {
+    font-size: 0.3em;
+    color: lightgrey;
+}
+
+.description {
+    font-size: 0.5em;
+    color: black;
+    width: 200px; /* Adjust to desired width for a 'text box' appearance */
+    margin: 0 auto; /* Center the text box if the container allows */
+}
+
+/* Style for collapsible details */
+.collapsible {
+    font-size: 0.5em;
+    color: black;
+    cursor: pointer;
+}
+
+.collapsible + .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 0.5em;
+    color: black;
+}
 
 
 html {
