@@ -52,16 +52,11 @@
     </section>
 
     <script>
-    window.addEventListener('scroll', function() {
-        var header = document.querySelector('.new-page-header'); // Ensure this selector matches your header's class
-        if (window.scrollY > 100) { // Start transition after 100px of scrolling, adjust as needed
-            header.classList.add('scroll-header');
-        } else {
-            header.classList.remove('scroll-header');
-        }
-    });
+        window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        header.classList.toggle('scroll-header', window.scrollY > 0);
+        });
     </script>
-
 
     <script>
         document.querySelectorAll('#gallery img').forEach(img => {
