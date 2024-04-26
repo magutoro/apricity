@@ -63,7 +63,7 @@ header {
 .scroll-header {
     background-color: white;
     color: black;
-    padding: 10px 20px; /* Adjust padding to increase header height with the text */
+    padding: 5px 0; /* Adjust padding to increase header height with the text */
 }
 
 
