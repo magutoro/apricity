@@ -31,7 +31,7 @@ header {
     justify-content: space-between; /* Adjusts spacing around the header content */
 }
 
-header redirect{
+header-redirect{
     background-color: white; /* White background */
     color: black; /* Black text */
     width: 100%;
