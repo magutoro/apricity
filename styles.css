@@ -12,11 +12,8 @@
     box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow: auto;  // This ensures that scrolling is enabled
-    min-height: 100%;  // This change ensures that the body can expand beyond the viewport height if needed
+body, html {
+    height: 100%;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -83,12 +80,12 @@ header {
     grid-template-columns: repeat(3, 1fr); /* Creates three columns of equal size */
     gap: 5px; /* Reduces the gap between images */
     padding: 20px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 #gallery figure {
     margin: 0;
-    overflow: auto;
+    overflow: hidden;
     position: relative;
 }
 
@@ -114,50 +111,40 @@ header {
 //* Container for the image and text columns */
 .new-page-container {
     display: flex;
-    padding-top: 70px;  /* Adjust this value if the header is taller */
-    height: calc(100vh - 70px); /* Adjust height calculation to match the header */
+    padding-top: 70px; /* Space for the header */
+    height: calc(100vh - 70px); /* Full height minus header height */
     box-sizing: border-box;
-    width: 100%;
+    width: 100%; /* Ensures the container takes full width */
 }
-
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden; /* Prevent scrolling to see if it removes the white strip */
-}
-
 
 /* Column for images */
 .image-column {
-    width: 50%;
-    height: calc(100vh - 70px); /* Adjust as needed */
-    overflow-y: auto;
-    margin: 0;
-    padding: 0;
+    width: 50%; /* Takes up half of the container width */
+    height: calc(100vh - 40px); /* Full viewport height minus header height */
+    overflow-y: auto; /* Allows vertical scrolling within the column */
 }
+
+/* Fixes the image stretch issue */
 .image-column img {
-    width: 100%;
-    height: auto;
-    display: block; /* This removes any space between inline-block elements */
+    width: 100%; /* Images fill the width of the image column */
+    height: auto; /* Maintains aspect ratio */
 }
 
 /* Column for text */
 .text-column {
-    width: 50%;
+    width: 50%; /* Takes up the other half of the container width */
     position: fixed;
     right: 0;
-    top: 70px;
+    top: 70px; /* Positioned below the header */
     height: calc(100vh - 70px);
     overflow-y: auto;
-    padding: 0 30px; /* Adjust padding to create a bigger gap between images and text */
-    box-sizing: border-box;
+    padding: 20px;
 }
 
+/* Adjust the individual text elements for alignment and spacing */
 .text-column > * {
-    margin-bottom: 20px;
-    text-align: left;
-    margin-left: auto; /* Ensures alignment is tight to the left */
+    margin-bottom: 20px; /* Adds space between text elements */
+    text-align: left; /* Ensures all text is aligned to the left */
 }
 
 /* Styling for individual text elements */
@@ -167,12 +154,12 @@ html, body {
 }
 
 .expression-tshirt {
-    font-size: 3em;
+    font-size: 2em;
     color: black;
 }
 
 .price {
-    font-size: 1.3em;
+    font-size: 0.3em;
     color: black;
 }
 
@@ -180,7 +167,7 @@ html, body {
 .description {
     width: 100%; /* Adjust width to fill the text column */
     text-align: left; /* Align text to the left */
-    padding-right: 0 20px; /* Prevent text from being flush against the edge */
+    padding-right: 20px; /* Prevent text from being flush against the edge */
     box-sizing: border-box;
     font-size: 1.5em;
     color: black;
