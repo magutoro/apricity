@@ -80,7 +80,11 @@ header {
     display: flex;
 }
 
-
+#hero {
+    position: relative;  // This ensures that hero-content positions itself relative to this container
+    width: 100%;
+    height: 100vh;  // This makes the hero image take the full height of the viewport
+}
 
 #hero img {
     width: 100%;
