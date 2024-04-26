@@ -42,7 +42,7 @@ header {
 
 .header-content {
     padding: 10px 20px; /* Adjust padding as needed */
-    font-size: 1.5em; /* Adjust the font-size of 'magutoro' text, make it larger or smaller as needed */
+    font-size: 1.4em; /* Adjust the font-size of 'magutoro' text, make it larger or smaller as needed */
     /* Change the font size below to adjust the size of the 'magutoro' text */
     /* Change this */ font-size: 2em; /* Adjust this value to make 'magutoro' bigger or smaller */
     width: 100%; /* Full width */
@@ -67,14 +67,14 @@ header {
 
 
 .header-link {
-    font-size: 1em;               /* Smaller font size for the links */
+    font-size: 0.8em;               /* Smaller font size for the links */
     color: black;                   /* Ensures the text is black */
     text-decoration: none;          /* No underline */
     padding: 10px;                  /* Padding around the links for easier clicking */
 }
 
 .header-content a {
-    font-size: 2em;                 /* Larger font size for 'Apricity' */
+    font-size: 1.4em;                 /* Larger font size for 'Apricity' */
     color: black;
     text-decoration: none;
 }
