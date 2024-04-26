@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Head content including linking to the stylesheet and custom font -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apricity by magutoro.co</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+    
 <body>
     <header>
-        <!-- Same header as your main page -->
+        <div class="header-content">magutoro.co</div>
     </header>
 
     <div class="container">
@@ -21,7 +25,7 @@
             <div class="apricity-creative">Apricity Creative</div>
             <div class="expression-tshirt">Expression T-Shirt</div>
             <div class="price">$200</div>
-            <div class="description">Long description about the product...</div>
+            <div class="description">Long description about the product...we want students to feel proud of their university. aaaaaaaaaaaaaaaaaa test test test test test</div>
           
           document.querySelectorAll('.collapsible').forEach(item => {
               item.addEventListener('click', function() {
@@ -34,8 +38,6 @@
                 } 
             });
         });  
-            <!-- Implement collapsible details and shipping policy sections -->
-            <!-- Additional JavaScript will be required for collapsible functionality -->
         </div>
     </div>
 
@@ -53,7 +55,14 @@
           <p>sentence 5</p>
           <p>sentence 6</p>
         </div>    
-      </script>
+    </script>
+    
+     <script>
+        window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        header.classList.toggle('scroll-header', window.scrollY > 0);
+        });
+    </script>
 
 </body>
 </html>
