@@ -29,6 +29,7 @@ header {
     display: flex; /* Aligns the header content vertically */
     align-items: center; /* Centers the header content vertically */
     justify-content: space-between; /* Adjusts spacing around the header content */
+    text-align: center; /* hoping by putting this in, the text will be in the center not the left */
 }
 
 .header-content {
