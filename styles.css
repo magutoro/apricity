@@ -144,8 +144,8 @@ header {
     text-align: left; /* Align text to the left */
     position: fixed;
     right: 0;
-    top: 60px; /* Below the header */
-    height: calc(100vh - 60px);
+    top: 80px; /* Below the header */
+    height: calc(100vh - 80px);
     overflow-y: scroll; /* Enable scrolling if text overflows */
     padding: 20px;
     box-sizing: border-box;
@@ -158,22 +158,22 @@ header {
 
 /* Styling for individual text elements */
 .apricity-creative {
-    font-size: 0.7em;
+    font-size: 1.7em;
     color: black;
 }
 
 .expression-tshirt {
-    font-size: 1em;
+    font-size: 3em;
     color: black;
 }
 
 .price {
-    font-size: 0.3em;
+    font-size: 1.3em;
     color: lightgrey;
 }
 
 .description {
-    font-size: 0.5em;
+    font-size: 1.5em;
     color: black;
     width: 200px; /* Adjust to desired width for a 'text box' appearance */
     margin: 0 auto; /* Center the text box if the container allows */
@@ -181,7 +181,7 @@ header {
 
 /* Style for collapsible details */
 .collapsible {
-    font-size: 0.5em;
+    font-size: 1.5em;
     color: black;
     cursor: pointer;
 }
