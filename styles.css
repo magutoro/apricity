@@ -34,7 +34,7 @@ header {
 
 .header-content {
     padding: 10px 20px; /* Adjust padding as needed */
-    font-size: 2em; /* Adjust the font-size of 'magutoro' text, make it larger or smaller as needed */
+    font-size: 1.8em; /* Adjust the font-size of 'magutoro' text, make it larger or smaller as needed */
     /* Change the font size below to adjust the size of the 'magutoro' text */
     /* Change this */ font-size: 2em; /* Adjust this value to make 'magutoro' bigger or smaller */
 }
@@ -50,12 +50,12 @@ header {
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%);
     color: white; /* Text color */
-    font-size: 5.5em; /* Text size for 'apricity', adjust as needed */
+    font-size: 6em; /* Text size for 'apricity', adjust as needed */
     z-index: 5; /* Ensure it's visible above the hero image */
 }
 
 .scroll-header {
-    background-color: white;
+    background-color: blue;
     color: black;
     padding: 10px 20px; /* Adjust padding to increase header height with the text */
 }
