@@ -31,17 +31,6 @@ header {
     justify-content: space-between; /* Adjusts spacing around the header content */
 }
 
-header-redirect{
-    background-color: white; /* White background */
-    color: black; /* Black text */
-    width: 100%;
-    padding: 1em 0; /* Adjust top and bottom padding as needed */
-    position: fixed; /* Fixed at the top */
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Above other items */
-    border-bottom: 2px solid lightgrey; /* Light grey bottom border */
-}
 
 .header-content {
     padding: 10px 20px; /* Adjust padding as needed */
@@ -50,6 +39,16 @@ header-redirect{
     /* Change this */ font-size: 2em; /* Adjust this value to make 'magutoro' bigger or smaller */
     width: 100%; /* Full width */
     text-align: center; /* hoping by putting this in, the text will be in the center not the left, also putting above others to see if this overwrite smthn*/
+}
+
+.new-page-header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    color: black;
+    z-index: 1000; /* Keep it on top */
+    padding: 10px 0;
+    border-bottom: 2px solid lightgrey; /* Specific to the new page */
 }
 
 #hero img {
@@ -110,14 +109,11 @@ header-redirect{
 
 
 /* Container holding image and text columns */
-.container {
+.new-page-container {
     display: flex;
-    width: 100%;
-    display: flex;
-    margin-top: 70px; /* Adjust so it's below the header */
-    height: calc(100vh - 70px); /* Subtract the header height */
-    align-items: center; /* Center content vertically */
-    justify-content: space-around; /* Even space around the items */
+    padding-top: 60px; /* Space for the header */
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 /* Column for images */
@@ -140,11 +136,19 @@ header-redirect{
 
 /* Column for text */
 .text-column {
-    flex-basis: 50%; /* Takes up half the container width */
-    align-self: flex-start; /* Start aligning from slightly above the center */
-    padding: 0 20px; /* Add padding to the left and right */
-    margin-top: -10%; /* Adjust this value to move the text slightly above the center */
-    text-align: left; /* Align text to the left */
+    flex: 1;
+    position: fixed;
+    right: 0;
+    top: 60px; /* Below the header */
+    height: calc(100vh - 60px);
+    overflow-y: scroll; /* Enable scrolling if text overflows */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text-column > * {
+    margin-top: 10%; /* Adjust to align text slightly above the center */
+    text-align: left;
 }
 
 /* Styling for individual text elements */
