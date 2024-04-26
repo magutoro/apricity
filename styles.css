@@ -92,6 +92,13 @@ header {
     transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
 }
 
+
+
+/* Redirect Page */
+
+
+
+
 html {
     scroll-behavior: smooth;
 }
