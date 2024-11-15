@@ -9,13 +9,28 @@
 
 <body>
 
-    <header>
-        <div class="header-content">magutoro.co</div>
-    </header>
+    <body>
+        <banner>
+            <div class="banner-left">
+                <a href="gallery.html" class="banner-link">Gallery</a>
+                <a href="story.html" class="banner-link">Story</a>
+            </div>
+            <div class="banner-content">
+                <a href="index.html">magutoro.co</a>
+            </div>
+            <div class="banner-right">
+                <a href="contacts.html" class="banner-link">Contacts</a>
+            </div>
+        </banner>
+        <script src="script.js"></script>
+    </body>
+    </html>
     
+
+
     <section id="hero">
         <img src="your-hero-image.jpg" alt="Hero Image">
-        <div class="hero-content">Apricity</div> <!-- Make sure this is inside the hero section -->
+        <div class="hero-content">Apricity</div> 
     </section>
   
     <section id="gallery">
@@ -51,27 +66,36 @@
         </figure>
     </section>
 
-    <script>
-        window.addEventListener('scroll', function() {
-        const header = document.querySelector('header');
-        header.classList.toggle('scroll-header', window.scrollY > 0);
-        });
-    </script>
 
     <script>
         document.querySelectorAll('#gallery img').forEach(img => {
         img.addEventListener('mouseenter', function() {
             setTimeout(() => {
                 if (img.matches(':hover')) {
-                    img.src = img.getAttribute('data-hover-src'); // Ensure the new image path is set in data-hover-src attribute
+                    img.src = img.getAttribute('data-hover-src'); 
                 }
-            }, 500); // Delay in milliseconds
+            }, 500); 
         });
         img.addEventListener('mouseleave', function() {
-            img.src = img.getAttribute('data-original-src'); // Revert to the original source
+            img.src = img.getAttribute('data-original-src'); 
         });
     });
     </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('scroll', function() {
+        var banner = document.querySelector('banner'); // Selecting the banner element
+        if (window.scrollY > 50) { // You can adjust the scroll threshold here
+            banner.classList.add('scroll-banner');
+        } else {
+            banner.classList.remove('scroll-banner');
+        }
+    });
+});
+
+    </script>
+    
     
 </body>
 </html>
